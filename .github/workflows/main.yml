@@ -23,7 +23,6 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v1
         with:
           role-to-assume: arn:aws:iam::890742607056:role/gitnewrolefordemo
-          audience: sts.amazonaws.com
           aws-region: ${{ env.AWS_REGION }}
 
       - name: Copy index.html to S3
